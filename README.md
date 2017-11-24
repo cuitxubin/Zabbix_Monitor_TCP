@@ -1,7 +1,7 @@
-*ZABBIX 3.0 监控服务器TCP连接状态*
+#*ZABBIX 3.0 监控服务器TCP连接状态*
 
 
-监控原理
+##监控原理
 	1、TCP连接可以使用命令获取：
 	*# netstat -an|awk '/^tcp/{++S[$NF]}END{for(a in S) print a,S[a]}'
 
