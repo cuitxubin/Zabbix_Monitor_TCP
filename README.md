@@ -1,7 +1,7 @@
-#*ZABBIX 3.0 监控服务器TCP连接状态*
+# *ZABBIX 3.0 监控服务器TCP连接状态*
 
 
-##监控原理
+## 监控原理
 	1、TCP连接可以使用命令获取：
 	*# netstat -an|awk '/^tcp/{++S[$NF]}END{for(a in S) print a,S[a]}'
 
@@ -18,7 +18,7 @@
 	TIME-WAIT -等待足够的时间以确保远程TCP接收到连接中断请求的确认； 
 	CLOSED - 没有任何连接状态；
 
-##使用方法
+## 使用方法
     1、将status_TCP.conf文件放置到/etc/zabbix/zabbix_agentd.d目录。
 
    	2、将脚本tcp_status.sh放置到目录/etc/zabbix/scripts下，如果目录不存在，则创建目录；赋予脚本执行权限及添加执行权限和tcp_status的属主和属组。
@@ -61,7 +61,7 @@
 
 
 
-###参考文档
+### 参考文档
 	1、http://www.xuliangwei.com/xubusi/637.html
 	2、http://blog.csdn.net/reblue520/article/details/52274354
 	3、https://www.abcdocker.com/abcdocker/2652
