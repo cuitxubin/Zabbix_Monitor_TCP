@@ -97,3 +97,5 @@ case $metric in
          *)
           echo -e "\e[033mUsage: sh  $0 [closed|closing|closewait|synrecv|synsent|finwait1|finwait2|listen|established|lastack|timewait]\e[0m"
 esac
+rm $tmp_file
+
